@@ -3,6 +3,13 @@ FROM quay.io/jupyter/tensorflow-notebook:cuda-latest
 
 # Install PyTorch with CUDA support
 RUN pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
+RUN pip install librosa
+RUN pip install soundfile
+RUN pip install pydub
+RUN pip install pyAudio
+RUN pip install simpleaudio
+RUN pip install audioread
+RUN pip install pyo
 
 # Install any additional dependencies
 # RUN pip install <other-dependencies>
